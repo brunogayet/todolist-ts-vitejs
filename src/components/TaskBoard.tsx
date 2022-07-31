@@ -25,7 +25,7 @@ export function TaskBoard() {
             isComplete: false
         };
 
-        setTasks([...tasks, newTask]);
+        setTasks(state => [...state, newTask]);
     }
 
     function deleteTask(id: string) {
